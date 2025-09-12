@@ -1,0 +1,58 @@
+/* @mixin pc_w_h {
+    max-width: 1360px;
+    min-width: 320px;
+    height: 750px;
+    margin: 50px auto 0;
+    padding: 60px;
+}
+@mixin flex-row {
+    display: flex; flex-flow: row nowrap;
+    justify-self: flex-start;
+    align-items: center;
+}
+
+}
+@mixin slide-btn {
+    display: inline-block;
+    width: 250px; height: 60px;
+    text-align: center;
+    border-radius: 40px;
+} */
+.slide_wrap {
+  width: 1360px;
+  height: 750px;
+  background-color: #ffffd4;
+  background-image: url(../images/home_chun_yellow_250813.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 800px auto;
+  background-position: 80% center;
+  padding: 50px;
+}
+.slide_wrap .slide_container .slide1 .bnr_link {
+  display: flex;
+}
+.slide_wrap .slide_container .slide1 .bnr_link .bnr1 {
+  border: 1px solid #000;
+  border-radius: 30px;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #000;
+}
+.slide_wrap .slide_container .slide1 .bnr_link .bnr2 {
+  border: 1px solid #000;
+  border-radius: 30px;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */
