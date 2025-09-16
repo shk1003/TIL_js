@@ -1,0 +1,22 @@
+body {background-color: aqua;}
+.main {
+    background-color: yellow;
+    width:700px; height: 700px;
+    text-align: center;
+}
+.main .height {padding: 20px;}
+.main .height > h1 {}
+.main .height #userheight {
+    width: 80px; height: 20px;
+}
+.main .weight {}
+.main .weight > h1 {}
+.main .height #userweight {}
+.main button {
+    border: 1px solid #aaa;
+    border-radius: 50px;
+    width: 200px; height: 30px;
+    background-color: pink;
+}
+.main p {}
+.main p em {}
