@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/9073/9073032.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/data.js"></script>
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
@@ -53,7 +54,7 @@
                             </button>
                         </div>
                     </div>
-                    <a href="#" class="review">
+                    <a href="#" class="review review_link">
                         <div class="score">
                             <svg class="star star1" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4.29495 16.12C3.52209 16.7083 2.44891 15.9605 2.73304 15.0318L3.93968 11.0875C4.06534 10.6767 3.91464 10.2316 3.56529 9.98167L0.534482 7.81329C-0.256395 7.24746 0.143897 6 1.11634 6H4.85597C5.29758 6 5.6869 5.71033 5.8138 5.28735L7.04217 1.19275C7.32723 0.242551 8.67277 0.24255 8.95783 1.19275L10.1862 5.28735C10.3131 5.71033 10.7024 6 11.144 6H14.8837C15.8561 6 16.2564 7.24746 15.4655 7.81329L12.4347 9.98167C12.0854 10.2316 11.9347 10.6767 12.0603 11.0875L13.267 15.0318C13.5511 15.9605 12.4779 16.7083 11.705 16.12L8.60566 13.761C8.24782 13.4886 7.75218 13.4886 7.39435 13.761L4.29495 16.12Z"/>
@@ -104,9 +105,9 @@
                         <div class="product_opt">
                             <select name="color_select" id="color_select">
                                 <option value="none">색상</option>
-                                <option value="black">블랙(39,900원)</option>
+                                <!-- <option value="black">블랙(39,900원)</option>
                                 <option value="rasberry">라즈베리(39,900원)</option>
-                                <option value="amond" disabled>아몬드(39,900원)/품절</option>
+                                <option value="amond" disabled>아몬드(39,900원)/품절</option> -->
                             </select>
                             <select name="size_select" id="size_select">
                                 <option value="none">사이즈</option>
@@ -144,6 +145,19 @@
                     </form>
                 </div>
             </div>
+            <div class="sticky_menu" style="
+                background-color: #f5f5f5; padding: 20px;
+                display: flex; gap: 20px;
+                position: sticky; top: 100px;
+            ">
+                <a href="#" class="product_link">상품정보</a><!-- 클릭 시 상품정보 위치 이동 -->
+                <a href="#" class="review_link">리뷰</a><!-- 클릭 시 리뷰 위치 이동 -->
+                <a href="#">문의</a>
+                <a href="#">배송/환불</a>
+                <a href="#">추천</a>
+            </div>
+            <div class="product_info" style="height: 1000px; background:aqua;">상품정보</div>
+            <div class="review_wrap" style="height: 1000px; background:lime;">고객리뷰</div>
         </main>
         <footer>footer</footer>
     </div>
