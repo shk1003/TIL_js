@@ -1,22 +1,40 @@
-body {background-color: aqua;}
+body {
+    /* background-color: aqua; */
+    display: flex; justify-content: center;
+}
 .main {
-    background-color: yellow;
-    width:700px; height: 700px;
+    background-color:#FFEFE0;
+    width:500px; height: 550px;
     text-align: center;
+    background-image: url(https://i.pinimg.com/1200x/f8/02/54/f8025475d6dd474a87032cdf4218845c.jpg);
+    background-position: 90% 90%;
+    opacity:;
+    background-repeat: no-repeat;
+    background-size: 39%;
+
 }
 .main .height {padding: 20px;}
-.main .height > h1 {}
+.main .height > h1 {
+    padding-bottom: 10px;
+}
 .main .height #userheight {
-    width: 80px; height: 20px;
+    width: 250px; height: 30px;
+    padding: 10px;
 }
 .main .weight {}
-.main .weight > h1 {}
-.main .height #userweight {}
+.main .weight > h1 {
+    padding-bottom: 10px;
+}
+.main .weight #userweight {
+    width: 250px; height: 30px;
+    padding: 10px;
+}
 .main button {
-    border: 1px solid #aaa;
     border-radius: 50px;
     width: 200px; height: 30px;
     background-color: pink;
+    margin: 30px;
+    color: white;
 }
 .main p {}
 .main p em {}
