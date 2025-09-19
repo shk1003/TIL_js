@@ -1,0 +1,207 @@
+#wrap main {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  /* background-color: aqua; */
+  padding-top: 40px;
+}
+#wrap main .container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+#wrap main .container .thumnail_img {
+  display: flex;
+  flex-flow: row nowrap;
+}
+#wrap main .container .thumnail_img .small_view {
+  display: flex;
+  flex-flow: column nowrap;
+}
+#wrap main .container .thumnail_img .small_view a {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#wrap main .container .thumnail_img .small_view a img {
+  width: 80px;
+  height: 80px;
+}
+#wrap main .container .big_view {
+  width: 640px;
+  overflow: hidden;
+}
+#wrap main .container .big_view .big {
+  display: flex;
+  width: 900px;
+  margin-left: 20px;
+}
+#wrap main .container .big_view .big img {
+  width: 640px;
+  height: 640px;
+}
+#wrap main .container .contents {
+  /* background-color:bisque; */
+  margin-left: 60px;
+}
+#wrap main .container .contents .review {
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 0.813rem;
+  padding-bottom: 5px;
+}
+#wrap main .container .contents .review p {
+  color: #3a4046;
+}
+#wrap main .container .contents .review .star {
+  fill: #008a48;
+  padding-right: 5px;
+}
+#wrap main .container .contents .review u {
+  padding: 0 10px 0;
+  color: #707070;
+}
+#wrap main .container .contents h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  padding-bottom: 15px;
+  color: #222222;
+  line-height: 120%;
+}
+#wrap main .container .contents h2 {
+  font-size: 0.938rem;
+  padding-bottom: 20px;
+  font-weight: 500;
+  color: #666666;
+}
+#wrap main .container .contents .price_wrap .price {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #008a48;
+}
+#wrap main .container .contents .price_wrap .original {
+  font-size: 1.125rem;
+  color: #999999;
+}
+#wrap main .container .contents .price_sale {
+  padding: 10px 0;
+}
+#wrap main .container .contents .price_sale .Benefit {
+  font-size: 0.938rem;
+  position: relative;
+  color: #666666;
+  font-weight: 500;
+}
+#wrap main .container .contents .price_sale .Benefit::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: 3px;
+  width: 1px;
+  height: 10px;
+  background: #666666;
+}
+#wrap main .container .contents .price_sale .sale_price {
+  font-size: 1.25rem;
+  color: #e63d3d;
+  font-weight: 600;
+  padding: 0 10px;
+}
+#wrap main .container .contents .free {
+  font-size: 0.813rem;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #999999;
+  color: #999999;
+}
+#wrap main .container .contents .order_number {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 25px 0;
+  border-bottom: 1px solid #999999;
+  align-items: center;
+}
+#wrap main .container .contents .order_number .number {
+  color: #353535;
+}
+#wrap main .container .contents .order_number .num_btn {
+  border: 1px solid #999999;
+  width: 86px;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+  padding: 10px;
+}
+#wrap main .container .contents .order_number .num_btn #order_num {
+  width: 30px;
+  padding: 5px;
+  font-size: 0.813rem;
+  text-align: center;
+  font-weight: 600;
+}
+#wrap main .container .contents .price_number {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+#wrap main .container .contents .price_number .price_all {
+  font-size: 1.063rem;
+  font-weight: 600;
+  color: #595959;
+}
+#wrap main .container .contents .price_number .right_price .price {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #008a48;
+}
+#wrap main .container .contents .price_number .right_price .num {
+  font-size: 0.813rem;
+  color: #595959;
+}
+#wrap main .container .contents .order_btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+#wrap main .container .contents .order_btn #cart_btn {
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #008a48;
+  font-weight: 600;
+  font-size: 1.063rem;
+  color: #008a48;
+  background-color: #fff;
+}
+#wrap main .container .contents .order_btn #buy_btn {
+  width: 190px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #008a48;
+  font-weight: 600;
+  color: #fff;
+  background-color: #008a48;
+}
+#wrap main .container .contents .order_btn .gift {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50px;
+  height: 50px;
+  background-color: #E3403B;
+  justify-content: center;
+  align-items: center;
+}
+#wrap main .container .contents .order_btn .gift .gift_icon {
+  fill: #fff;
+  padding: 2px;
+}
+#wrap main .container .contents .order_btn .gift #gift_btn {
+  font-size: 0.813rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=main.css.map */
