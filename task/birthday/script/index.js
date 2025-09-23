@@ -49,15 +49,21 @@ const birthday_flower = [
         content:'축하, 감사'
     }
 ]
-/* const flower = document.querySelector('')
-for(let i=0; i<birthday_flower.length; i++){
-    console.log(`${birthday_flower[i].month}월 탄생화 ${birthday_flower[i].flower}`)
-} */
 
-for (let i = 0; i < birthday_flower.length; i++) {
-    if (birthday_flower[i].month === month) {
-        resultTag.innerText = `${month}월의 탄생화는 ${birthday_flower[i].flower}이고 꽃말은 ${birthday_flower[i].content}입니다.`;
-        found = true;
-        break; // 찾았으면 반복문 멈추기
+const btn = document.querySelector('#btn');
+const monthTag = document.querySelector('.month');
+const flowerTag = document.querySelector('.flower');
+const textTag = document.querySelector('.text');
+
+btn.addEventListener('click', function() {
+    const month = Number(document.querySelector('#usermonth').value);
+
+    for(let i=0; i<birthday_flower.length; i++) {
+        if(birthday_flower[i].month === month) {
+            monthTag.textContent = birthday_flower[i].month;
+            flowerTag.textContent = birthday_flower[i].flower;
+            textTag.textContent = birthday_flower[i].content;
+            break;
+        }
     }
-}
+});
