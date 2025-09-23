@@ -6,7 +6,7 @@
         /* background-color: aqua; */
         padding-top: 40px;
         .container {
-            @include flex-row;
+            @include flex-row; 
             .thumnail_img {
                 @include flex-row;
                 .small_view {
@@ -20,13 +20,15 @@
                     }
                 }
             }
-            .big_view {width:640px; overflow:hidden;
+            .big_view {
+                width:640px; overflow:hidden;
                 .big {
+                    position: relative;
                     display:flex; width:calc(450px * 2);
-                    margin-left: 20px;
+                    margin-left: 20px; 
                     .photo {}
                     img {@include thumnail_big;}
-                }
+                } 
             }
             .contents {
                 /* background-color:bisque; */

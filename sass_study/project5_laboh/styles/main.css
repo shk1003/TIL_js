@@ -31,6 +31,7 @@
   overflow: hidden;
 }
 #wrap main .container .big_view .big {
+  position: relative;
   display: flex;
   width: 900px;
   margin-left: 20px;
